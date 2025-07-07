@@ -42,6 +42,22 @@ margin-right: auto;
     class: 10점
     tag: 1점
     id(#): 100점
-
+    style: 1000점 <- HTML에 직접 작성
     우선순위에 따라 높은 순으로 먼저 적용됨.
 */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    box-shadow: black 3px 3px;
+    /* box shadow 숙제 */
+}
