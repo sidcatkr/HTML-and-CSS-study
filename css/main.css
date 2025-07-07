@@ -1,0 +1,47 @@
+.profile {
+width: 100px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.title {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+.intro1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.txtcolor {
+    color:rgb(255, 206, 145) ;
+}
+
+.aboutme {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+/* p {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+} 
+    모든 p 태그에 적용*/
+
+/*  태그에는 우선순위가 있음.
+    class: 10점
+    tag: 1점
+    id(#): 100점
+
+    우선순위에 따라 높은 순으로 먼저 적용됨.
+*/
