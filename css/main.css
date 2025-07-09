@@ -61,3 +61,14 @@ margin-right: auto;
     box-shadow: black 3px 3px;
     /* box shadow 숙제 */
 }
+
+.alert-box {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: coral;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}
