@@ -13,11 +13,11 @@
         </script>
     <div class="alert-box" id="alert">
         Alert Box
-        <button class="button" onclick="hide()">
+        <button class="button" onclick="display('none')">
             닫기
         </button>
     </div>
-    <button class="button" onclick="display()">
+    <button class="button" onclick="display('block')">
         열기
     </button>
     <p class="intro1">
@@ -25,7 +25,6 @@
         Developer
     </p>
 
-    <!-- HW: Add some styles and introduction here -->
     <p class="aboutme">
         I am learning
         <span style="color: rgb(255, 162, 0);">HTML</span>
@@ -37,12 +36,27 @@
     </div>
 
     <script>
-        function display(){
-            document.getElementById('alert').style.display = 'block';
+        function display(displayMode){
+            document.getElementById('alert').style.display = displayMode;
         }
-        function hide(){
-            document.getElementById('alert').style.display = 'none';
+
+        // function display(){
+        //     document.getElementById('alert').style.display = '';
+        // } 이런 식으로 하면 안됨. param 쓸때는 항상 정의!!
+
+        // () <-여기에 block, none 이런거 집어넣으면 그거 실행됨 -> 함수 하나로 여러 기능
+        // 비슷한 함수 있으면 가변적인 부분에 저거 쓰면 됨
+
+        // function hide(){
+        //     document.getElementById('alert').style.display = 'none';
+        // }
+        function plus(a){
+            2 + a
         }
+
+        plus(1);
+
+
     </script>
 
 </body>
