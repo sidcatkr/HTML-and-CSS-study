@@ -13,11 +13,11 @@
         </script>
     <div class="alert-box" id="alert">
         Alert Box
-        <button class="button" onclick="document.getElementById('alert').style.display = 'none';">
+        <button class="button" onclick="hide()">
             닫기
         </button>
     </div>
-    <button class="button" onclick="document.getElementById('alert').style.display = 'block';">
+    <button class="button" onclick="display()">
         열기
     </button>
     <p class="intro1">
@@ -35,6 +35,15 @@
     <div class="box">
         <p>asdf</p>
     </div>
+
+    <script>
+        function display(){
+            document.getElementById('alert').style.display = 'block';
+        }
+        function hide(){
+            document.getElementById('alert').style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
