@@ -1,0 +1,20 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/recommended",
+        "prettier"
+    ],
+    "plugins": ["import"],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        // Customize your rules here
+    }
+}
+// 이거 아직 어떻게 쓰는지 모름

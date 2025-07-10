@@ -1,63 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link href="css/main.css" rel="stylesheet">
-</head>
-<body>
-    <img src="logo.svg" class="profile">
-    <h3 class="title" id="title">Hello, I am</h3>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <img src="logo.svg" class="profile" />
+        <h3 class="title" id="title">Hello, I am</h3>
         <script>
-            document.getElementById("title").style.fontSize = '20px';
+            document.getElementById('title').style.fontSize = '20px'
         </script>
-    <div class="alert-box" id="alert">
-        Alert Box
-        <button class="button" onclick="display('none')">
-            닫기
-        </button>
-    </div>
-    <button class="button" onclick="display('block')">
-        열기
-    </button>
-    <p class="intro1">
-        <span class="txtcolor">Student</span>
-        Developer
-    </p>
+        <div class="alert-box" id="idbox">
+            <p>아이디 입력하세요</p>
+            <button onclick="button1('none')">닫기</button>
+        </div>
+        <div class="alert-box" id="pwbox">
+            <p>비밀번호 입력하세요</p>
+            <button onclick="button2('none')">닫기</button>
+        </div>
+        <button class="button" onclick="button1('block')">버튼1</button>
+        <button class="button" onclick="button2('block')">버튼2</button>
+        <p class="intro1">
+            <span class="txtcolor">Student</span>
+            Developer
+        </p>
 
-    <p class="aboutme">
-        I am learning
-        <span style="color: rgb(255, 162, 0);">HTML</span>
-        <a> and </a>
-        <span style="color: deepskyblue;">CSS</span>
-    </p>
-    <div class="box">
-        <p>asdf</p>
-    </div>
+        <p class="aboutme">
+            I am learning
+            <span style="color: rgb(255, 162, 0)">HTML</span>
+            <a> and </a>
+            <span style="color: deepskyblue">CSS</span>
+        </p>
+        <div class="box">
+            <p>asdf</p>
+        </div>
 
-    <script>
-        function display(displayMode){
-            document.getElementById('alert').style.display = displayMode;
-        }
+        <script>
+            function button1(displayMode) {
+                document.getElementById('idbox').style.display = displayMode
+            }
+            function button2(displayMode) {
+                document.getElementById('pwbox').style.display = displayMode
+            }
 
-        // function display(){
-        //     document.getElementById('alert').style.display = '';
-        // } 이런 식으로 하면 안됨. param 쓸때는 항상 정의!!
+            // function display(){
+            //     document.getElementById('alert').style.display = '';
+            // } 이런 식으로 하면 안됨. param 쓸때는 항상 정의!!
 
-        // () <-여기에 block, none 이런거 집어넣으면 그거 실행됨 -> 함수 하나로 여러 기능
-        // 비슷한 함수 있으면 가변적인 부분에 저거 쓰면 됨
+            // () <-여기에 block, none 이런거 집어넣으면 그거 실행됨 -> 함수 하나로 여러 기능
+            // 비슷한 함수 있으면 가변적인 부분에 저거 쓰면 됨
 
-        // function hide(){
-        //     document.getElementById('alert').style.display = 'none';
-        // }
-        function plus(a){
-            2 + a
-        }
-
-        plus(1);
-
-
-    </script>
-
-</body>
+            // function hide(){
+            //     document.getElementById('alert').style.display = 'none';
+            // }
+            function plus(a) {
+                2 + a
+            }
+        </script>
+    </body>
 </html>

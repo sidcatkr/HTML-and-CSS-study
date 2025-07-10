@@ -1,8 +1,8 @@
 .profile {
-width: 100px;
-display: block;
-margin-left: auto;
-margin-right: auto;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title {
@@ -20,7 +20,7 @@ margin-right: auto;
 }
 
 .txtcolor {
-    color:rgb(255, 206, 145) ;
+    color: rgb(255, 206, 145);
 }
 
 .aboutme {
@@ -71,10 +71,6 @@ margin-right: auto;
     border-radius: 5px;
     color: white;
     display: none;
-}
-
-.button {
-    margin: auto
 }
 
 .container {
